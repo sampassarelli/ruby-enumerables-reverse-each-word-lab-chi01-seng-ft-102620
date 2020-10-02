@@ -12,14 +12,7 @@ def reverse_each_word(string)
  string.split.each {|word| new_array << word.reverse}.join(" ")
 end 
 
-#def reverse_each_word(string)
-#  string.split.collect {|word| word.reverse}.join(" ")
-#end
-  
 def reverse_each_word(string)
-  string_array = string.split
-  string_array.collect do |word|
-    string_array << word.reverse
-  end
-  string_array.join(" ")
+  string.split.collect {|word| word.reverse}.join(" ")
 end
+  
